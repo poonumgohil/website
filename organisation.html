@@ -1,217 +1,32 @@
 <!DOCTYPE html>
 <html>
-   <head>
-     <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<head>
+<script src='//production-assets.codepen.io/assets/editor/live/console_runner-079c09a0e3b9ff743e39ee2d5637b9216b3545af0de366d4b9aad9dc87e26bfd.js'></script><script src='//production-assets.codepen.io/assets/editor/live/events_runner-73716630c22bbc8cff4bd0f07b135f00a0bdc5d14629260c3ec49e5606f98fdd.js'></script><script src='//production-assets.codepen.io/assets/editor/live/css_live_reload_init-2c0dc5167d60a5af3ee189d570b1835129687ea2a61bee3513dee3a50c115a77.js'></script><meta charset='UTF-8'><meta name="robots" content="noindex"><link rel="shortcut icon" type="image/x-icon" href="//production-assets.codepen.io/assets/favicon/favicon-8ea04875e70c4b0bb41da869e81236e54394d63638a1ef12fa558a4a835f1164.ico" /><link rel="mask-icon" type="" href="//production-assets.codepen.io/assets/favicon/logo-pin-f2d2b6d2c61838f7e76325261b7195c27224080bc099486ddd6dccb469b8e8e6.svg" color="#111" /><link rel="canonical" href="https://codepen.io/michiel-nuovo/pen/NNgByK?depth=everything&order=popularity&page=2&q=card+list&show_forks=false" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 
-<style>
-.center {text-align: center;}
-
-  </head>
-
-
-  <!DOCTYPE html><html lang='en' class=''>
-<head><script src='//production-assets.codepen.io/assets/editor/live/console_runner-079c09a0e3b9ff743e39ee2d5637b9216b3545af0de366d4b9aad9dc87e26bfd.js'></script><script src='//production-assets.codepen.io/assets/editor/live/events_runner-73716630c22bbc8cff4bd0f07b135f00a0bdc5d14629260c3ec49e5606f98fdd.js'></script><script src='//production-assets.codepen.io/assets/editor/live/css_live_reload_init-2c0dc5167d60a5af3ee189d570b1835129687ea2a61bee3513dee3a50c115a77.js'></script><meta charset='UTF-8'><meta name="robots" content="noindex"><link rel="shortcut icon" type="image/x-icon" href="//production-assets.codepen.io/assets/favicon/favicon-8ea04875e70c4b0bb41da869e81236e54394d63638a1ef12fa558a4a835f1164.ico" /><link rel="mask-icon" type="" href="//production-assets.codepen.io/assets/favicon/logo-pin-f2d2b6d2c61838f7e76325261b7195c27224080bc099486ddd6dccb469b8e8e6.svg" color="#111" /><link rel="canonical" href="https://codepen.io/michiel-nuovo/pen/NNgByK?depth=everything&order=popularity&page=2&q=card+list&show_forks=false" />
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<style class="cp-pen-styles">html,
-body {
-  margin: 0;
-  background:#fafafa;
-  color: #6E6E6E;
-  font-size: 18px;
-  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
-  z-index:-1;
-  position:relative;
-}
-.all {
-
-}
-
-.shadow-1:before {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  width: inherit;
-  height: inherit;
-  z-index: -2;
-  box-sizing: border-box;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.13);
-}
-
-.shadow-1:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  width: inherit;
-  height: inherit;
-  z-index: -2;
-  box-sizing: border-box;
-  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.08);
-}
-
-.shadow-2:before {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  width: inherit;
-  height: inherit;
-  z-index: -2;
-  box-sizing: border-box;
-  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.1);
-}
-
-.shadow-2:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  width: inherit;
-  height: inherit;
-  z-index: -2;
-  box-sizing: border-box;
-  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.1);
-}
-
-.shadow-3:before {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  width: inherit;
-  height: inherit;
-  z-index: -2;
-  box-sizing: border-box;
-  box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.12);
-}
-
-.shadow-3:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  width: inherit;
-  height: inherit;
-  z-index: -2;
-  box-sizing: border-box;
-  box-shadow: 0 17px 50px 0 rgba(0, 0, 0, 0.1);
-}
-
-.shadow-4:before {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  width: inherit;
-  height: inherit;
-  z-index: -2;
-  box-sizing: border-box;
-  box-shadow: 0 16px 28px 0 rgba(0, 0, 0, 0.11);
-}
-
-.shadow-4:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  width: inherit;
-  height: inherit;
-  z-index: -2;
-  box-sizing: border-box;
-  box-shadow: 0 25px 55px 0 rgba(0, 0, 0, 0.11);
-}
-
-.shadow-5:before {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  width: inherit;
-  height: inherit;
-  z-index: -2;
-  box-sizing: border-box;
-  box-shadow: 0 27px 24px 0 rgba(0, 0, 0, 0.1);
-}
-
-.shadow-5:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  width: inherit;
-  height: inherit;
-  z-index: -2;
-  box-sizing: border-box;
-  box-shadow: 0 40px 77px 0 rgba(0, 0, 0, 0.11);
-}
-
-.card {
-  position: relative;
-  height: 100px;
-  background: #fcfcfc;
-  margin: 20px 40px;
-  transition: 0.4s all;
-}
-
-.card.open {
-  height: 200px;
-  background: #ffffff;
-}
-
-@media only screen and (min-width: 600px) {
-  .card {
-  width:500px;
-    margin-top:20px;
-    margin-bottom:20px;
-    margin-left:auto;
-    margin-right:auto;
-  }
-}
-
-@media only screen and (max-device-width: 800px) and (orientation: portrait) {
-  .card {
-    margin: 12px 10px;
-  }
-}</style></head><body>
+<link href="css/css.css" rel="stylesheet" type="text/css">
+</head>
+<body>
 <div class="all">
   <div class="cards">
-    <div class="card shadow-1">
-      <h2><b><u><center>ORGANISATION</center></u></b></h2>
-      
+    <div class="card shadow-1 centre">
+      <h2><b><u>ORGANISATION</u></b></h2>
+
     </div>
-    <div class="card shadow-1"> <p><center>Create daily lists in order to visualise what needs to be accomplished.</center></p>
+    <div class="card shadow-1 centre"> <p>Create daily lists in order to visualise what needs to be accomplished.</p>
     </div>
-    <div class="card shadow-1"> <p><center>Develop a timetable for allocated tasks in order to stay on time.</center></p>
+    <div class="card shadow-1 centre"> <p>Develop a timetable for allocated tasks in order to stay on time.</p>
     </div>
-    <div class="card shadow-1"> <p><center>Take regular breaks to maintain a better focus.</center></p>
+    <div class="card shadow-1 centre"> <p>Take regular breaks to maintain a better focus.</p>
     </div>
-    <div class="card shadow-1"> <p><center>Keep a calendar or diary with deadlines pencilled in to give a visual perspective on what needs to be done.</center></p>
+    <div class="card shadow-1 centre"> <p>Keep a calendar or diary with deadlines pencilled in to give a visual perspective on what needs to be done.</p>
     </div>
-    <div class="card shadow-1"><p><center>Stay away from any forms of distraction during study periods</center></p></div>
+    <div class="card shadow-1 centre"><p>Stay away from any forms of distraction during study periods.</p></div>
   </div>
 </div>
 <!-- END .all -->
