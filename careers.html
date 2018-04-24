@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src='//production-assets.codepen.io/assets/editor/live/console_runner-079c09a0e3b9ff743e39ee2d5637b9216b3545af0de366d4b9aad9dc87e26bfd.js'></script><script src='//production-assets.codepen.io/assets/editor/live/events_runner-73716630c22bbc8cff4bd0f07b135f00a0bdc5d14629260c3ec49e5606f98fdd.js'></script><script src='//production-assets.codepen.io/assets/editor/live/css_live_reload_init-2c0dc5167d60a5af3ee189d570b1835129687ea2a61bee3513dee3a50c115a77.js'></script><meta charset='UTF-8'><meta name="robots" content="noindex"><link rel="shortcut icon" type="image/x-icon" href="//production-assets.codepen.io/assets/favicon/favicon-8ea04875e70c4b0bb41da869e81236e54394d63638a1ef12fa558a4a835f1164.ico" /><link rel="mask-icon" type="" href="//production-assets.codepen.io/assets/favicon/logo-pin-f2d2b6d2c61838f7e76325261b7195c27224080bc099486ddd6dccb469b8e8e6.svg" color="#111" /><link rel="canonical" href="https://codepen.io/michiel-nuovo/pen/NNgByK?depth=everything&order=popularity&page=2&q=card+list&show_forks=false" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+<link href="css/css.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="all">
+  <div class="cards">
+    <div class="card shadow-1 centre">
+      <h2><b><u>CAREERS</u></b></h2>
+
+    </div>
+    <div class="card shadow-1 centre"> <p>From finding a job to applying to (hopefully) success, the University careers team are a great resource. They can help with CVs and Cover Letters, have plenty of tips on hand to help with interview nerves, and know about the best local opportunities for part-time work and gradate positions.
+Saving this, below is some useful websites to make a start on helping you get that dream job!
+</p>
+    </div>
+    <div class="card shadow-1 centre"> <h6>Finding a Job</h6>
+		<p>https://www.prospects.ac.uk/graduate-jobs
+https://www.indeed.co.uk/
+https://www.gradcracker.com/
+		</p>
+    </div>
+    <div class="card shadow-1 centre"> <h6>Finding Work experience</h6>
+		<p>Work experience can be a handy way to gain skills that employers look for.
+https://www.allaboutcareers.com/careers-advice/work-experience/how-to-get-work-experience
+https://www.prospects.ac.uk/jobs-and-work-experience/work-experience-and-internships
+		</p>
+    </div>
+    <div class="card shadow-1 centre"> <h6>VCs</h6>
+		<p>Useful websites for creating a CV – don’t forget to visit the University careers service!
+https://www.prospects.ac.uk/careers-advice/cvs-and-cover-letters/how-to-write-a-cv
+https://www.careers.govt.nz/tools/cv-builder/
+		</p>
+    </div>
+    <div class="card shadow-1 centre"><h6>Cover Letters</h6>
+		<p>Cover Letters aren’t the easiest to write – hopefully these sites help!
+https://www.prospects.ac.uk/careers-advice/cvs-and-cover-letters/cover-letters
+https://www.monster.co.uk/career-advice/article/how-to-write-a-cover-letter
+https://www.theguardian.com/careers/covering-letter-examples
+		</p>
+	</div>
+	<div class="card shadow-1 centre"> <h6>Interviews</h6>
+		<p>Interviews aren’t easy – remember to be yourself!
+https://www.prospects.ac.uk/careers-advice/interview-tips
+https://www.totaljobs.com/careers-advice/interviews
+		</p>
+    </div>
+  </div>
+</div>
+<!-- END .all -->
+<script src='//production-assets.codepen.io/assets/common/stopExecutionOnTimeout-b2a7b3fe212eaa732349046d8416e00a9dec26eb7fd347590fbced3ab38af52e.js'></script><script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+<script >$('.card').on('click', function() {
+  if ($(this).hasClass('open')) {
+    $('.card').removeClass('open');
+    $('.card').removeClass('shadow-2');
+    $(this).addClass('shadow-1');
+    return false;
+  } else {
+    $('.card').removeClass('open');
+    $('.card').removeClass('shadow-2');
+    $(this).addClass('open');
+    $(this).addClass('shadow-2');
+  }
+});
+//# sourceURL=pen.js
+</script>
+</body></html>
